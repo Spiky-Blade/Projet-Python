@@ -14,7 +14,7 @@ guerrier1.addWeapon(weapon2)
 guerrier1.addWeapon(weapon3)
 
 
-guerrier1.setWeapon("Durandal")
+guerrier1.setSelectedWeapon("Durandal")
 
 guerrier1.losePV(10)
 print(guerrier1)

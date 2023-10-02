@@ -6,7 +6,7 @@ class Warrior:
     __selectedWeapon = None
 
     def __init__(self, name, PV):
-        self.__nom = nom
+        self.__name = name
         self.__PV = PV
         self.__weapons = []
         self.__selectedWeapon = None
@@ -18,7 +18,7 @@ class Warrior:
         return self.__PV
 
     def __str__(self):
-        return self.__nom + " à " + str(self.__PV) + " PV. Son arme principal est " + str(self.__armeEnMain.getNom())
+        return self.__name + " à " + str(self.__PV) + " PV. Son arme principal est " + str(self.__selectedWeapon.getName())
 
     def addWeapon(self, w:Weapon):
         if len(self.__weapons) < 5:
@@ -32,11 +32,11 @@ class Warrior:
 
     def setSelectedWeapon(self, weaponToSet):
         for weapon in self.__weapons:
-            if weapon.getNom().lower() == weaponToSet.lower():
+            if weapon.getName().lower() == weaponToSet.lower():
                 self.__selectedWeapon = weapon
 
     def losePV(self, pvToRemove):
         self.__PV -= pvToRemove
 
     def attaquer(self, AttackingWarrior, AttackedWarrior):
-        AttackedWarrior.losePV(AttackingWarrior.__armeEnMain.getAttack)
+        AttackedWarrior.losePV(AttackingWarrior.__armeEnMain.getAttack())
