@@ -1,13 +1,13 @@
 class Weapon:
-    __nom = ""
+    __name = ""
     __attack = 0
 
-    def __init__(self, nom, attack):
-        self.__nom = nom
+    def __init__(self, name, attack):
+        self.__name = name
         self.__attack = attack
 
-    def getNom(self):
-        return self.__nom
+    def getName(self):
+        return self.__name
 
     def getAttack(self):
         return self.__attack
