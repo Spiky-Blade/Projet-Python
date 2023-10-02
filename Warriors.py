@@ -1,6 +1,6 @@
 from Weapon import *
 
-class Guerrier:
+class Warrior:
     __name = ""
     __PV = 0
     __selectedWeapon = None

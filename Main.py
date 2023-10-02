@@ -1,22 +1,22 @@
 # Créé par Elève, le 27/09/2023 en Python 3.7
-from Guerriers import *
+from Warriors import *
 
 #Création des guerriers
-guerrier1 = Guerrier("Conan", 78)
+guerrier1 = Warrior("Conan", 78)
 
 #Création des armes
 weapon1 = Weapon("Excalibur", 7)
 weapon2 = Weapon("Durandal", 4)
 weapon3 = Weapon("MasterSword", 10)
 
-guerrier1.ajouterArmes(weapon1)
-guerrier1.ajouterArmes(weapon2)
-guerrier1.ajouterArmes(weapon3)
+guerrier1.addWeapon(weapon1)
+guerrier1.addWeapon(weapon2)
+guerrier1.addWeapon(weapon3)
 
 
-guerrier1.setArmeEnMain("Durandal")
+guerrier1.setWeapon("Durandal")
 
-guerrier1.perdPV(10)
+guerrier1.losePV(10)
 print(guerrier1)
 """
  Le guerrier, quand il est victime d’une attaque, voit son niveau de vie baisser d’un certain
