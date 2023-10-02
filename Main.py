@@ -23,9 +23,10 @@ print(guerrier1)
 nombre de points (passés en argument).
  Le personnage doit pouvoir attaquer un autre personnage. Les dégâts subis par le personnage
 correspondent au niveau d’attaque de l’arme en main. Toutefois, si le guerrier « Lannister »,
-attaque avec l’épée « Durandal », les dégâts sont doublés. Idem si « Conan » attaque avec
-« Excalibur ».
- Test :
+attaque avec l’épée « Durandal », les dégâts sont doublés. Idem si « Conan » attaque avec « Excalibur ».
+
+Test :
+
 Créer 2 guerriers et une épée qui sera affectée au second.
 Faire en sorte que le premier soit victime d'une attaque de la part du second et afficher leurs
 caractéristiques. Vérifier les dégâts subis dans toutes les configurations possibles.
